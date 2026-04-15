@@ -1,0 +1,89 @@
+# About Dataset
+Daily Weather Observations list observations of a number of weather elements each day for years 2008 to 2017.
+
+Data are owned by the Australian Bureau of Meteorology (BOM).
+http://www.bom.gov.au/climate
+
+# Data Description
+Weather Observations 2008-2017
+Various locations accross Australia
+
+# Columns
+## Date
+Date of the observation
+
+## Location
+Location of the observation
+
+## Temp
+### Min
+Minimum temperature in the 24 hours to 9am. Sometimes only known to the nearest whole degree.
+
+### Max
+Maximum temperature in the 24 hours from 9am. Sometimes only known to the nearest whole degree.
+
+## Rainfall
+Precipitation (rainfall) in the 24 hours to 9am. Sometimes only known to the nearest whole millimetre.
+
+## Evaporation
+"Class A" pan evaporation in the 24 hours to 9am
+
+## Sunshine
+Bright sunshine in the 24 hours to midnight
+
+## WindGust
+### Dir
+Direction of strongest gust in the 24 hours to midnight
+
+### Speed
+Speed of strongest wind gust in the 24 hours to midnight
+
+## WindDir
+### 9am
+Wind direction averaged over 10 minutes prior to 9 am
+
+### 3pm
+The direction of the wind gust at 3 p.m.
+
+## WindSpeed
+### 9am
+Wind speed (in kilometers per hour) averaged over 10 min before 9 a.m.
+
+### 3pm
+Wind speed (in kilometers per hour) averaged over 10 min before 3 p.m.
+
+## Humidity
+### 9am
+Relative humidity (in percent) at 9 am
+
+### 3pm
+Relative humidity (in percent) at 3 pm
+
+## Pressure
+### 9am
+Atmospheric pressure (hpa) reduced to mean sea level at 9 a.m.
+
+### 3pm
+Atmospheric pressure (hpa) reduced to mean sea level at 3 p.m.
+
+## Cloud
+### 9am
+Fraction of sky obscured by cloud at 9 a.m. This is measured in ”oktas,” which are a unit of eighths. It records how many eighths of the sky are obscured by cloud. A 0 measure indicates completely clear sky, while an 8 indicates that it is completely overcast
+### 3pm
+Fraction of sky obscured by cloud at 3 p.m; see Cloud9am for a description of the values
+
+## Temp
+### 9am
+Temperature (degrees C) at 9 a.m.
+
+### 3pm
+Temperature (degrees C) at 3 p.m.
+
+## RainToday
+Integer 1 if precipitation (in millimeters) in the 24 h to 9 a.m. exceeds 1 mm, otherwise 0
+
+## RISK_MM (target for regression)
+The continuous target variable; the amount of rain recorded during the next day
+
+## RainTomorrow (target for classification)
+The binary target variable whether it rains or not during the next day
